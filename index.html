@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BRISK Café — Premium digital menu. Browse our specialty coffee, signature drinks, fresh juices, and more." />
+  <meta name="theme-color" content="#062A5C" />
+  <title>BRISK Café — Digital Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!--
+    Cormorant Garamond: editorial display — hero, section titles, product names
+    Outfit: geometric sans — descriptions, prices, labels, UI
+  -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================== HERO ======================== -->
+  <header class="hero" id="hero">
+    <!-- CSS Art-Direction layers -->
+    <div class="hero__mist" aria-hidden="true">
+      <div class="hero__circle-1"></div>
+      <div class="hero__circle-2"></div>
+    </div>
+    <div class="hero__lines" aria-hidden="true"></div>
+
+    <!-- Logo plaque — architectural branded panel, top-left -->
+    <div class="hero__logo-plaque" aria-label="BRISK Café Logo">
+      <div class="hero__logo-plaque-inner">
+        <img src="logo.jpg" alt="BRISK Café Logo" class="hero__logo-img" />
+      </div>
+    </div>
+
+    <!-- Hero text composition -->
+    <div class="hero__content">
+      <span class="hero__eyebrow">Specialty Coffee &amp; More</span>
+      <img src="logo.jpg" alt="BRISK Café" class="hero__center-logo" />
+      <p class="hero__tagline">Crafted with care · Served with love</p>
+      <div class="hero__divider">
+        <span></span><span class="hero__divider-icon">✦</span><span></span>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+ 
+
+    <!-- Smooth hero → menu transition -->
+    <div class="hero__transition" aria-hidden="true"></div>
+  </header>
+
+  <!-- ======================== STICKY NAV ======================== -->
+  <nav class="category-nav" id="categoryNav" role="navigation" aria-label="Menu categories">
+    <button class="cat-arrow cat-arrow--prev" id="catPrev" aria-label="Scroll categories left">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    </button>
+    <div class="category-nav__track-wrap">
+      <div class="category-nav__track" id="categoryTrack">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+    <button class="cat-arrow cat-arrow--next" id="catNext" aria-label="Scroll categories right">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </nav>
+
+  <!-- ======================== MENU SECTION ======================== -->
+  <main class="menu-section" id="menuSection">
+    <div class="menu-section__header">
+      <h2 class="menu-section__title" id="sectionTitle">Coffee</h2>
+      <p class="menu-section__count" id="sectionCount"></p>
+    </div>
+    <div class="products-grid" id="productsGrid">
+      <!-- Injected by JS -->
+    </div>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__brand">BRISK</p>
+      <p class="site-footer__text">Specialty Coffee &amp; More</p>
+      <div class="site-footer__divider"></div>
+      <p class="site-footer__copy">All prices include VAT &nbsp;·&nbsp; Menu updated regularly</p>
+    </div>
+  </footer>
+
+  <!-- ======================== FLOATING SOCIAL BAR ======================== -->
+  <div class="social-bar" id="socialBar" aria-label="Follow BRISK Café on social media" role="complementary">
+    <div class="social-bar__glass">
+      <div class="social-bar__reflection" aria-hidden="true"></div>
+
+      <a href="https://www.instagram.com/brisk_coffee" target="_blank" rel="noopener noreferrer"
+         class="social-bar__link" id="socialInstagram" aria-label="Follow us on Instagram">
+        <span class="social-bar__icon-wrap">
+          <!-- Instagram SVG -->
+          <svg class="social-bar__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="6" ry="6" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="social-bar__ripple" aria-hidden="true"></span>
+      </a>
+
+      <div class="social-bar__sep" aria-hidden="true"></div>
+
+      <a href="https://www.tiktok.com/@brisk_coffee" target="_blank" rel="noopener noreferrer"
+         class="social-bar__link" id="socialTikTok" aria-label="Follow us on TikTok">
+        <span class="social-bar__icon-wrap">
+          <!-- TikTok SVG -->
+          <svg class="social-bar__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="social-bar__ripple" aria-hidden="true"></span>
+      </a>
+
+      <div class="social-bar__sep" aria-hidden="true"></div>
+
+      <a href="https://www.facebook.com/BRISK1NUBARIA" target="_blank" rel="noopener noreferrer"
+         class="social-bar__link" id="socialFacebook" aria-label="Follow us on Facebook">
+        <span class="social-bar__icon-wrap">
+          <!-- Facebook SVG -->
+          <svg class="social-bar__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="social-bar__ripple" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
