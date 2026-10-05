@@ -171,9 +171,9 @@ const menuData = {
   ],
 
   salads: [
-    { id: 'sl1', name: 'Greek Salad', desc: 'Crispy cucumbers, olives, tomato and feta cheese', prices: 119, img: 'Default.jpg' },
-    { id: 'sl2', name: 'Tuna Salad', desc: 'Fresh tuna over garden greens with lemon dressing', prices: 129, img: 'Default.jpg' },
-    { id: 'sl3', name: 'Caesar Salad', desc: 'Romaine, parmesan shavings and caesar dressing', prices: 140, img: 'Default.jpg' },
+    { id: 'sl1', name: 'Greek Salad', desc: '', prices: 119, img: 'Default.jpg' },
+    { id: 'sl2', name: 'Tuna Salad', desc: '', prices: 129, img: 'Default.jpg' },
+    { id: 'sl3', name: 'Caesar Salad', desc: '', prices: 140, img: 'Default.jpg' },
   ],
 
   "Dessert & Bakery": [
